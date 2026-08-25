@@ -48,7 +48,7 @@
         .social-links a { text-decoration: none; color: #2b4c59; font-weight: 600; background: #D2ECF2; padding: 8px 16px; border-radius: 4px; transition: opacity 0.2s; }
         .social-links a:hover { opacity: 0.8; }
 
-        /* MOBILOS TÖRTELLT MENÜ MEGJELENÉS */
+        /* MOBILOS NÉZET BEÁLLÍTÁSAI */
         @media (max-width: 600px) {
             nav { 
                 flex-direction: column; 
@@ -69,6 +69,10 @@
                 font-size: 0.95rem; 
                 padding: 2px 4px;
             }
+            /* MOBILON ELREJTJÜK AZ "& ÉLMÉNYEK" KIEGÉSZÍTÉST */
+            .desktop-only { 
+                display: none; 
+            }
             .intro-section { 
                 padding-top: 150px;
             }
@@ -86,7 +90,8 @@
             </div>
             <ul class="nav-links">
                 <li><a href="#bemutatkozas">Bemutatkozás</a></li>
-                <li><a href="#foglalkozasok">Foglalkozások & Élmények</a></li>
+                <!-- MOBILON CSAK "FOGLALKOZÁSOK", MONITORON A TELJES NÉV -->
+                <li><a href="#foglalkozasok">Foglalkozások<span class="desktop-only"> & Élmények</span></a></li>
                 <li><a href="#aktualis">Aktuális</a></li>
                 <li><a href="#kapcsolat">Kapcsolat</a></li>
             </ul>

@@ -48,21 +48,39 @@
         .social-links a { text-decoration: none; color: #2b4c59; font-weight: 600; background: #D2ECF2; padding: 8px 16px; border-radius: 4px; transition: opacity 0.2s; }
         .social-links a:hover { opacity: 0.8; }
 
-        /* MOBILOS FINOMÍTÁSOK */
+        /* MOBILOS TÖRTELLT MENÜ MEGJELENÉS */
         @media (max-width: 600px) {
-            nav { flex-direction: column; gap: 10px; text-align: center; }
-            .brand-container { justify-content: center; }
-            .intro-section { padding-top: 130px; }
+            nav { 
+                flex-direction: column; 
+                gap: 10px; 
+                text-align: center; 
+                padding: 12px 10px;
+            }
+            .brand-container { 
+                justify-content: center; 
+                margin-bottom: 4px;
+            }
+            .nav-links { 
+                flex-wrap: wrap; 
+                justify-content: center;
+                gap: 10px 16px; 
+            }
+            .nav-links a { 
+                font-size: 0.95rem; 
+                padding: 2px 4px;
+            }
+            .intro-section { 
+                padding-top: 150px; /* Megnövelt felső hely, hogy a tördelő menü ne takarja ki a címet */
+            }
         }
     </style>
 </head>
 <body>
 
-    <!-- FIX MENÜ (LOGÓVAL ÉS AKTUÁLIS MENÜPONTTAL) -->
+    <!-- FIX MENÜ -->
     <header>
         <nav>
             <div class="brand-container">
-                <!-- LOGÓ (Amint feltöltesz egy logo.png képet a GitHubra, itt fog megjelenni) -->
                 <!-- <img src="logo.png" alt="Koór Gréti Logó" class="site-logo"> -->
                 <div class="logo-text">Koór Gréti</div>
             </div>

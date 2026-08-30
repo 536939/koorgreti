@@ -63,6 +63,15 @@
         .social-links a { text-decoration: none; color: #2b4c59; font-weight: 600; background: #D2ECF2; padding: 8px 16px; border-radius: 4px; transition: opacity 0.2s; display: inline-block; }
         .social-links a:hover { opacity: 0.8; }
 
+        /* ÜZENETKÜLDŐ ŰRLAP STÍLUSA */
+        .contact-form { margin-top: 20px; display: flex; flex-direction: column; gap: 15px; }
+        .form-group { display: flex; flex-direction: column; gap: 5px; }
+        .form-group label { font-weight: 600; color: #2b4c59; font-size: 0.95rem; }
+        .form-group input, .form-group textarea { padding: 12px; border: 1px solid #cbd5e0; border-radius: 6px; font-family: inherit; font-size: 1rem; background: #f7fcfe; }
+        .form-group input:focus, .form-group textarea:focus { outline: none; border-color: #2b4c59; background: #ffffff; }
+        .submit-btn { background: #2b4c59; color: #ffffff; border: none; padding: 12px 24px; border-radius: 6px; font-size: 1rem; font-weight: 600; cursor: pointer; transition: background 0.2s; align-self: flex-start; }
+        .submit-btn:hover { background: #1a3038; }
+
         /* MOBILOS NÉZET BEÁLLÍTÁSAI */
         @media (max-width: 600px) {
             nav { 
@@ -92,6 +101,9 @@
             }
             .content-card {
                 padding: 20px;
+            }
+            .submit-btn {
+                width: 100%;
             }
         }
     </style>
@@ -170,7 +182,7 @@
                 
                 <h4>Kinek és miben segít az egyéni foglalkozás?</h4>
                 <p>Hiszem, hogy mindannyiunk számára létfontosságú a teljes figyelem és az elfogadó jelenlét. Az egyéni órákon egy biztonságos közegben, a zene és a vizuális alkotás eszközeivel segítjük a belső egyensúly megteremtését.</p>
-                <p><strong>Szeretettel ajánlom gyermekeknek és felnötteknek egyaránt, ha segítségre van szükség az alábbi területeken:</strong></p>
+                <p><strong>Szeretettel ajánlom gyermekeknek és felnőtteknek egyaránt, ha segítségre van szükség az alábbi területeken:</strong></p>
                 <ul>
                     <li><strong>Feszültségoldás és érzelmi egyensúly:</strong> stresszkezelés, frusztrációtűrés, indulatkezelés és hatékony megküzdési stratégiák kialakítása.</li>
                     <li><strong>Személyiségfejlődés:</strong> az önbecsülés, a pozitív önkép, a testtudat és a kommunikáció erősítése.</li>
@@ -274,7 +286,7 @@
     </section>
     -->
 
-    <!-- 4. KAPCSOLAT -->
+    <!-- 4. KAPCSOLAT ÉS DIREKT ÜZENETKÜLDÉS -->
     <section id="kapcsolat" style="background: #ffffff;">
         <div class="container">
             <h2>Kapcsolat</h2>
@@ -288,6 +300,33 @@
                     <li><a href="https://facebook.com/DallamTer" target="_blank">DallamTér</a></li>
                     <li><a href="https://facebook.com/lenduljmuveszetterapia" target="_blank">Lendülj Művészetterápia</a></li>
                 </ul>
+
+                <hr style="border: 0; border-top: 1px dashed #cbd5e0; margin: 30px 0;">
+
+                <h4>Írj nekem közvetlenül üzenetet:</h4>
+                <form action="https://formspree.io/f/xrpgbwal" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Neved *</label>
+                        <input type="text" id="name" name="name" required placeholder="Pl. Kovács Anna">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">E-mail címed *</label>
+                        <input type="email" id="email" name="email" required placeholder="Pl. anna@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Telefonszámod (nem kötelező)</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Pl. +36 30 123 4567">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Üzeneted *</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Írd le miben lehetek a segítségedre..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Üzenet elküldése</button>
+                </form>
             </div>
         </div>
     </section>

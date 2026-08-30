@@ -42,12 +42,15 @@
         h2 { display: inline-block; border-bottom: 3px solid #D2ECF2; padding-bottom: 5px; margin-bottom: 25px; }
 
         .intro-section { padding-top: 110px; }
-        .subtitle { font-size: 1.1rem; font-weight: 600; color: #2b4c59; margin-top: -15px; margin-bottom: 25px; }
+        .subtitle { font-size: 1.15rem; font-weight: 600; color: #2b4c59; margin-top: -15px; margin-bottom: 30px; }
         
-        /* TEVÉKENYSÉGEK EGYMÁS ALATTI BLOKKJAI */
-        .activity-block { margin-bottom: 40px; background: #ffffff; padding: 25px; border-radius: 8px; border-left: 4px solid #D2ECF2; box-shadow: 0 2px 8px rgba(0,0,0,0.02); }
-        .activity-block h3 { font-size: 1.3rem; color: #2b4c59; margin-bottom: 10px; }
-        .activity-block h4 { color: #1a3038; margin-top: 20px; margin-bottom: 8px; font-size: 1.05rem; }
+        /* EGYSÉGES KÁRTYA / BLOKK STÍLUS AZ EGÉSZ OLDALON */
+        .content-card { margin-bottom: 30px; background: #ffffff; padding: 25px 30px; border-radius: 8px; border-left: 4px solid #D2ECF2; box-shadow: 0 2px 8px rgba(0,0,0,0.02); }
+        .content-card h3 { font-size: 1.3rem; color: #2b4c59; margin-bottom: 12px; }
+        .content-card h4 { color: #1a3038; margin-top: 20px; margin-bottom: 8px; font-size: 1.05rem; }
+
+        /* IDÉZET BOX STÍLUSA */
+        blockquote { background: #f0f9fc; border-left: 4px solid #2b4c59; padding: 15px 20px; margin: 20px 0; border-radius: 4px; font-style: italic; color: #1a3038; }
 
         /* SOCIAL LINKELIK */
         .social-links { display: flex; flex-wrap: wrap; gap: 12px; list-style: none; padding: 0; margin-top: 15px; }
@@ -81,6 +84,9 @@
             .intro-section { 
                 padding-top: 150px;
             }
+            .content-card {
+                padding: 20px;
+            }
         }
     </style>
 </head>
@@ -90,7 +96,7 @@
     <header>
         <nav>
             <div class="brand-container">
-                <!-- LOGÓ HELYE (Ha megvan a logo.png fájl, csak vedd ki a komment jelet): -->
+                <!-- LOGÓ HELYE: -->
                 <!-- <img src="logo.png" alt="Koór Gréta Logó" class="site-logo"> -->
                 <div class="logo-text">Koór Gréta</div>
             </div>
@@ -103,22 +109,46 @@
         </nav>
     </header>
 
-    <!-- 1. BEMUTATKOZÁS -->
+    <!-- 1. BEMUTATKOZÁS (VIZUÁLISAN EGYSÉGESÍTVE A FOGLALKOZÁSOK SZEKCIÓVAL) -->
     <section id="bemutatkozas" class="intro-section">
         <div class="container">
             <h1>Koór Gréta</h1>
             <div class="subtitle">zenepedagógus, zeneterapeuta, Kokas-foglalkozásvezető</div>
             
-            <p>Gyerekkorom óta a zene, az alkotás és a mozgás szerelmese vagyok. Már nagyon fiatalon tudtam, hogy a művészetekkel és az emberek segítésével szeretnék foglalkozni. Szerettem volna a zenét mint önkifejezési és fejlődési formát minél több oldalról körbejárni, ezért a tanulmányaimat a zeneművészet, a zenetudomány, a zenepedagógia és a zeneterápia nézőpontjaiból építettem fel.</p>
+            <!-- BLOKK 1: RÓLAM & INDÍTTATÁS -->
+            <div class="content-card">
+                <h3>Rólam 🌱</h3>
+                <p>Gyerekkorom óta a zene, az alkotás és a mozgás szerelmese vagyok. Már nagyon fiatalon tudtam, hogy a művészetekkel és az emberek segítésével szeretnék foglalkozni.</p>
+                <p>Szerettem volna a zenét mint önkifejezési és fejlődési formát minél több oldalról körbejárni, ezért a tanulmányaimat a zeneművészet, a zenetudomány, a zenepedagógia és a zeneterápia nézőpontjaiból építettem fel.</p>
+            </div>
 
-            <h2>Szakmai utam</h2>
-            <p>Végzett ének-zene pedagógusként és zenetudományi mesterdiplomásként mindig kerestem az alternatív és komplex utakat. Így találtam rá a Kokas-pedagógiára és a zeneterápiára (amelyből a Pécsi Tudományegyetem Zeneművészeti és Orvostudományi Karának közös képzésén szereztem zeneterapeuta végzettséget).</p>
-            <p>Pályám során sokféle közegben tapasztaltam és tanultam: dolgoztam többségi oktatásban ének-rajz szakos tanárként, alternatív tanulócsoportban, valamint speciális fejlesztő iskolában is, ahol tanulásban akadályozott és autizmusban érintett gyermekekkel foglalkoztam egyéni és kiscsoportos formában. Munkámhoz szervesen hozzátartoznak a tudományos kutatásaim, írásaim és publikációim is.</p>
+            <!-- BLOKK 2: SZAKMAI ÚT -->
+            <div class="content-card">
+                <h3>Szakmai utam 🎓</h3>
+                <p>Végzett ének-zene pedagógusként és zenetudományi mesterdiplomásként mindig kerestem az alternatív és komplex utakat. Így találtam rá a Kokas-pedagógiára és a zeneterápiára (amelyből a Pécsi Tudományegyetem Zeneművészeti és Orvostudományi Karának közös képzésén szereztem zeneterapeuta végzettséget).</p>
+                
+                <h4>Tapasztalataim és működési területeim:</h4>
+                <ul>
+                    <li>Dolgoztam a többségi oktatásban ének-rajz szakos tanárként.</li>
+                    <li>Tapasztalatot szereztem alternatív tanulócsoportban.</li>
+                    <li>Speciális fejlesztő iskolában tanulásban akadályozott és autizmusban érintett gyermekekkel foglalkoztam egyéni és kiscsoportos formában.</li>
+                    <li>Munkámhoz szervesen hozzátartoznak a tudományos kutatásaim, írásaim és publikációim is.</li>
+                </ul>
+            </div>
 
-            <h2>Hivatásom és hitvallásom</h2>
-            <p>Nagyon szeretem az életet, a természetet és a művészeteket. Az a célom, hogy átadhassam azon értékek szeretetét a gyermekeknek és felnőtteknek, melyekben én is hiszek: a természet csodájában, az együtt zenélés örömében és a közös alkotás erejében. Hiszem, hogy a zenének gyógyító ereje van, és általa teljesebb, egészségesebb életet élhetünk.</p>
-            <p>Békés megyében szervezek saját Kokas-foglalkozásokat, alkotónapokat, táborokat és zeneterápiás műhelyeket. A foglalkozások során a résztvevők elmélyültebben foglalkozhatnak a művészetterápiákkal, megismerhetik önmagukat és társaikat, miközben fejlődik a szociális érzékük, mozgáskoordinációjuk és ritmusérzékük.</p>
-            <p>A Kokas-pedagógia és a zeneterápia számomra egy napsütötte rét, ahová mindig megérkezhetek a haloványabb hétköznapok során is, és ahol a hozzám érkezőkkel együtt csodaszép közös élményekben gyarapodhatunk, feltöltődhetünk. Örömmel tölt el, hogy azt a hivatást gyakorolhatom, amiről gyermekkorom óta álmodom – ezt az örömöt és feltöltődést szeretném átadni a hozzám érkezőknek is.</p>
+            <!-- BLOKK 3: HIVATÁS ÉS HITVALLÁS -->
+            <div class="content-card">
+                <h3>Hivatásom és hitvallásom ☀️</h3>
+                <p>Nagyon szeretem az életet, a természetet és a művészeteket. Az a célom, hogy átadhassam azon értékek szeretetét a gyermekeknek és felnőtteknek, melyekben én is hiszek: a természet csodájában, az együtt zenélés örömében és a közös alkotás erejében. Hiszem, hogy a zenének gyógyító ereje van, és általa teljesebb, egészségesebb életet élhetünk.</p>
+                <p>Békés megyében szervezek saját Kokas-foglalkozásokat, alkotónapokat, táborokat és zeneterápiás műhelyeket. A foglalkozások során a résztvevők elmélyültebben foglalkozhatnak a művészetekkel, megismerhetik önmagukat és társaikat, miközben fejlődik a szociális érzékük, mozgáskoordinációjuk és ritmusérzékük.</p>
+                
+                <blockquote>
+                    „A Kokas-pedagógia és a zeneterápia számomra egy napsütötte rét, ahová mindig megérkezhetek a haloványabb hétköznapok során is, és ahol a hozzám érkezőkkel együtt csodaszép közös élményekben gyarapodhatunk, feltöltődhetünk.”
+                </blockquote>
+                
+                <p>Örömmel tölt el, hogy azt a hivatást gyakorolhatom, amiről gyermekkorom óta álmodom – ezt az örömöt és feltöltődést szeretném átadni a hozzám érkezőknek is.</p>
+            </div>
+
         </div>
     </section>
 
@@ -128,7 +158,7 @@
             <h2>Foglalkozások & Élmények</h2>
             
             <!-- EGYÉNI ÓRÁK -->
-            <div class="activity-block">
+            <div class="content-card">
                 <h3>Egyéni órák – Egyéni utak</h3>
                 <p>A zene- és művészetterápia segít oldani a stresszt, kifejezni az érzelmeket, erősíti az önbizalmat, a kreativitást és támogató társ az önismeret útján.</p>
                 
@@ -147,13 +177,13 @@
             </div>
 
             <!-- ZENEOVI -->
-            <div class="activity-block">
+            <div class="content-card">
                 <h3>Zeneovi</h3>
                 <p><em>[Részletek hamarosan...]</em></p>
             </div>
 
             <!-- KOKAS-FOGLALKOZÁS -->
-            <div class="activity-block">
+            <div class="content-card">
                 <h3>Kokas-foglalkozás</h3>
                 <p>Kokas Klára zenéből indított művészetpedagógiájának központjában az aktív zenebefogadás, improvizatív mozgás, kreatív éneklés és szabad vizuális kifejezés áll. Eltérő képességterületeket aknáz ki és kapcsol össze, és ennek révén lehetővé teszi a zene élményszerű, teljes figyelemmel történő befogadását. Összetettsége révén járul hozzá a komplex személyiségfejlődéshez, szociális készségek javításához, motorikus és finommotorikus, téri-vizuális és kognitív képességek – mint memória, figyelem, képzelet – fejlődéséhez.</p>
                 
@@ -164,7 +194,7 @@
             </div>
 
             <!-- ZENEI FÓKUSZÚ CSOPORTOK -->
-            <div class="activity-block">
+            <div class="content-card">
                 <h3>Zenei fókuszú komplex művészetterápiás csoportok 🎨🪘</h3>
                 
                 <h4>a) Zenélj, fess, lazulj! – Nyitott csoport</h4>
@@ -191,7 +221,7 @@
             </div>
 
             <!-- ZENGŐ ALKOTÓTÁBOR -->
-            <div class="activity-block">
+            <div class="content-card">
                 <h3>Zengő Alkotótábor 🌱🎨🎶</h3>
                 <p>A Zengő Alkotótábor a szívem csücske: megálmodója, szervezője és vezetője vagyok annak a folyamatnak, aminek keretében 2026-ban már az 5. tábort tarthattam meg. Ez egy olyan élményalapú nyári tábor a természet lágy ölén, ahol a gyermekek a művészeteken – zenén, mozgáson és képzőművészeten – keresztül tapasztalhatják meg az alkotás és a közösség felszabadító örömét. A programokat rendszeresen szuper vendégművészek teszik még színesebbé!</p>
                 
@@ -211,7 +241,7 @@
             </div>
 
             <!-- EGYEDI RENDEZVÉNYEK -->
-            <div class="activity-block">
+            <div class="content-card">
                 <h3>Mindenkinek jár egy kis alkotás!</h3>
                 <p><strong>Egyedi rendezvények, workshopok és közös élmények 🌱</strong></p>
                 <p>Az igényeknek és a lehetőségeknek csak a képzeletünk szabhat határt: gyermekzsúr, osztálytalálkozó, baráti összejövetel, csapatépítő, pedagógiai kari feltöltődés vagy családi találkozó is megszervezhető a közös alkotás és zenélés jegyében.</p>
@@ -229,7 +259,7 @@
         </div>
     </section>
 
-    <!-- 3. AKTUÁLIS (EGYELŐRE KIKOMMENTELVE, HOGY NE JELENJEN MEG)
+    <!-- 3. AKTUÁLIS (KIKOMMENTELVE)
     <section id="aktualis">
         <div class="container">
             <h2>Aktuális</h2>
@@ -242,15 +272,17 @@
     <section id="kapcsolat" style="background: #ffffff;">
         <div class="container">
             <h2>Kapcsolat</h2>
-            <p><strong>Koór Gréta</strong></p>
-            <p><strong>E-mail:</strong> <a href="mailto:dallamter@gmail.com" style="color: #2b4c59;">dallamter@gmail.com</a></p>
-            
-            <h3>Kövess be és vedd fel velem a kapcsolatot a Facebookon is:</h3>
-            <ul class="social-links">
-                <li><a href="https://facebook.com/Greti.Kokas" target="_blank">Gréta Kokas-oldala</a></li>
-                <li><a href="https://facebook.com/DallamTer" target="_blank">DallamTér</a></li>
-                <li><a href="https://facebook.com/lenduljmuveszetterapia" target="_blank">Lendülj Művészetterápia</a></li>
-            </ul>
+            <div class="content-card">
+                <p><strong>Koór Gréta</strong></p>
+                <p><strong>E-mail:</strong> <a href="mailto:dallamter@gmail.com" style="color: #2b4c59;">dallamter@gmail.com</a></p>
+                
+                <h4>Kövess be és vedd fel velem a kapcsolatot a Facebookon is:</h4>
+                <ul class="social-links">
+                    <li><a href="https://facebook.com/Greti.Kokas" target="_blank">Gréta Kokas-oldala</a></li>
+                    <li><a href="https://facebook.com/DallamTer" target="_blank">DallamTér</a></li>
+                    <li><a href="https://facebook.com/lenduljmuveszetterapia" target="_blank">Lendülj Művészetterápia</a></li>
+                </ul>
+            </div>
         </div>
     </section>
 

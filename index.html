@@ -31,8 +31,14 @@
         .logo-text { font-size: 1.3rem; font-weight: 700; color: #2b4c59; }
 
         .nav-links { list-style: none; display: flex; gap: 15px; margin: 0; padding: 0; }
-        .nav-links a { text-decoration: none; color: #4a5568; font-weight: 600; font-size: 0.95rem; transition: color 0.2s; }
+        .nav-links a { text-decoration: none; color: #4a5568; font-weight: 600; font-size: 0.95rem; transition: all 0.2s ease; border-bottom: 2px solid transparent; padding-bottom: 2px; }
         .nav-links a:hover { color: #2b4c59; }
+
+        /* AKTÍV MENÜPONT ALÁHÚZÁSA GÖRDÜLÉSKOR */
+        .nav-links a.active {
+            color: #2b4c59;
+            border-bottom: 2px solid #2b4c59;
+        }
 
         /* SZEKCIÓK STÍLUSA */
         section { padding: 90px 0 40px 0; border-bottom: 1px solid #e3f2f7; }
@@ -164,7 +170,7 @@
                 
                 <h4>Kinek és miben segít az egyéni foglalkozás?</h4>
                 <p>Hiszem, hogy mindannyiunk számára létfontosságú a teljes figyelem és az elfogadó jelenlét. Az egyéni órákon egy biztonságos közegben, a zene és a vizuális alkotás eszközeivel segítjük a belső egyensúly megteremtését.</p>
-                <p><strong>Szeretettel ajánlom gyermekeknek és felnőtteknek egyaránt, ha segítségre van szükség az alábbi területeken:</strong></p>
+                <p><strong>Szeretettel ajánlom gyermekeknek és felnötteknek egyaránt, ha segítségre van szükség az alábbi területeken:</strong></p>
                 <ul>
                     <li><strong>Feszültségoldás és érzelmi egyensúly:</strong> stresszkezelés, frusztrációtűrés, indulatkezelés és hatékony megküzdési stratégiák kialakítása.</li>
                     <li><strong>Személyiségfejlődés:</strong> az önbecsülés, a pozitív önkép, a testtudat és a kommunikáció erősítése.</li>
@@ -286,5 +292,28 @@
         </div>
     </section>
 
+    <!-- AUTOMATIKUS MENÜ-ALÁHÚZÁST VEZÉRLŐ JAVASCRIPT -->
+    <script>
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll(".nav-links a");
+
+        window.addEventListener("scroll", () => {
+            let current = "";
+            
+            sections.forEach((section) => {
+                const sectionTop = section.offsetTop;
+                if (window.pageYOffset >= sectionTop - 120) {
+                    current = section.getAttribute("id");
+                }
+            });
+
+            navLinks.forEach((a) => {
+                a.classList.remove("active");
+                if (a.getAttribute("href") === `#${current}`) {
+                    a.classList.add("active");
+                }
+            });
+        });
+    </script>
 </body>
 </html>

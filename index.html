@@ -3,7 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Koór Gréti</title>
+    
+    <!-- GOOGLE ÉS AI KERESŐOPTIMALIZÁLÁS (SEO) -->
+    <title>Koór Gréta – Zeneterápia, Kokas-foglalkozások és Önismeret</title>
+    <meta name="description" content="Koór Gréta zenepedagógus, zeneterapeuta és Kokas-foglalkozásvezető oldala. Zeneterápia, alkotónapok, Zengő Alkotótábor és művészetterápiás csoportok Békés megyében.">
+    <meta name="keywords" content="Koór Gréta, zeneterápia, Kokas-foglalkozás, művészetterápia, Zengő Alkotótábor, Békés megye, önismeret, egyéni zeneterápia">
+    <meta name="author" content="Koór Gréta">
+
+    <!-- FACEBOOK / MESSENGER MEGOSZTÁS (Open Graph) -->
+    <meta property="og:title" content="Koór Gréta – Zeneterápia és Kokas-foglalkozások">
+    <meta property="og:description" content="Élményalapú alkotó és önismereti folyamatok, zeneterápia, Kokas-foglalkozások és Zengő Alkotótábor.">
+    <meta property="og:type" content="website">
+
     <style>
         /* ALAPBEÁLLÍTÁSOK ÉS SIMA GÖRDÜLÉS */
         html { scroll-behavior: smooth; }
@@ -31,21 +42,16 @@
         h2 { display: inline-block; border-bottom: 3px solid #D2ECF2; padding-bottom: 5px; margin-bottom: 25px; }
 
         .intro-section { padding-top: 110px; }
+        .subtitle { font-size: 1.1rem; font-weight: 600; color: #2b4c59; margin-top: -15px; margin-bottom: 25px; }
         
         /* TEVÉKENYSÉGEK EGYMÁS ALATTI BLOKKJAI */
-        .activity-block { margin-bottom: 35px; }
-        .activity-block h3 { font-size: 1.25rem; color: #2b4c59; margin-bottom: 8px; }
-
-        /* RESZPONZÍV KÉPEK */
-        .responsive-img { width: 100%; max-width: 100%; height: auto; border-radius: 8px; margin: 15px 0; }
-
-        /* RESZPONZÍV YOUTUBE VIDEÓ BEÁGYAZÁS */
-        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 20px 0; border-radius: 8px; }
-        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+        .activity-block { margin-bottom: 40px; background: #ffffff; padding: 25px; border-radius: 8px; border-left: 4px solid #D2ECF2; box-shadow: 0 2px 8px rgba(0,0,0,0.02); }
+        .activity-block h3 { font-size: 1.3rem; color: #2b4c59; margin-bottom: 10px; }
+        .activity-block h4 { color: #1a3038; margin-top: 20px; margin-bottom: 8px; font-size: 1.05rem; }
 
         /* SOCIAL LINKELIK */
-        .social-links { display: flex; gap: 15px; list-style: none; padding: 0; margin-top: 15px; }
-        .social-links a { text-decoration: none; color: #2b4c59; font-weight: 600; background: #D2ECF2; padding: 8px 16px; border-radius: 4px; transition: opacity 0.2s; }
+        .social-links { display: flex; flex-wrap: wrap; gap: 12px; list-style: none; padding: 0; margin-top: 15px; }
+        .social-links a { text-decoration: none; color: #2b4c59; font-weight: 600; background: #D2ECF2; padding: 8px 16px; border-radius: 4px; transition: opacity 0.2s; display: inline-block; }
         .social-links a:hover { opacity: 0.8; }
 
         /* MOBILOS NÉZET BEÁLLÍTÁSAI */
@@ -69,7 +75,6 @@
                 font-size: 0.95rem; 
                 padding: 2px 4px;
             }
-            /* MOBILON ELREJTJÜK AZ "& ÉLMÉNYEK" KIEGÉSZÍTÉST */
             .desktop-only { 
                 display: none; 
             }
@@ -85,14 +90,14 @@
     <header>
         <nav>
             <div class="brand-container">
-                <!-- <img src="logo.png" alt="Koór Gréti Logó" class="site-logo"> -->
-                <div class="logo-text">Koór Gréti</div>
+                <!-- LOGÓ HELYE (Ha megvan a logo.png fájl, csak vedd ki a komment jelet): -->
+                <!-- <img src="logo.png" alt="Koór Gréta Logó" class="site-logo"> -->
+                <div class="logo-text">Koór Gréta</div>
             </div>
             <ul class="nav-links">
                 <li><a href="#bemutatkozas">Bemutatkozás</a></li>
-                <!-- MOBILON CSAK "FOGLALKOZÁSOK", MONITORON A TELJES NÉV -->
                 <li><a href="#foglalkozasok">Foglalkozások<span class="desktop-only"> & Élmények</span></a></li>
-                <li><a href="#aktualis">Aktuális</a></li>
+                <!-- <li><a href="#aktualis">Aktuális</a></li> -->
                 <li><a href="#kapcsolat">Kapcsolat</a></li>
             </ul>
         </nav>
@@ -101,17 +106,19 @@
     <!-- 1. BEMUTATKOZÁS -->
     <section id="bemutatkozas" class="intro-section">
         <div class="container">
-            <h1>Bemutatkozás</h1>
+            <h1>Koór Gréta</h1>
+            <div class="subtitle">zenepedagógus, zeneterapeuta, Kokas-foglalkozásvezető</div>
             
-            <div style="margin-bottom: 30px;">
-                <h2>Ki vagyok?</h2>
-                <p><em>[Ide jön a személyes bemutatkozó szöveged...]</em></p>
-            </div>
+            <p>Gyerekkorom óta a zene, az alkotás és a mozgás szerelmese vagyok. Már nagyon fiatalon tudtam, hogy a művészetekkel és az emberek segítésével szeretnék foglalkozni. Szerettem volna a zenét mint önkifejezési és fejlődési formát minél több oldalról körbejárni, ezért a tanulmányaimat a zeneművészet, a zenetudomány, a zenepedagógia és a zeneterápia nézőpontjaiból építettem fel.</p>
 
-            <div>
-                <h2>Mit akarok?</h2>
-                <p><em>[Ide jön a céljaidat, küldetésedet összefoglaló szöveg...]</em></p>
-            </div>
+            <h2>Szakmai utam</h2>
+            <p>Végzett ének-zene pedagógusként és zenetudományi mesterdiplomásként mindig kerestem az alternatív és komplex utakat. Így találtam rá a Kokas-pedagógiára és a zeneterápiára (amelyből a Pécsi Tudományegyetem Zeneművészeti és Orvostudományi Karának közös képzésén szereztem zeneterapeuta végzettséget).</p>
+            <p>Pályám során sokféle közegben tapasztaltam és tanultam: dolgoztam többségi oktatásban ének-rajz szakos tanárként, alternatív tanulócsoportban, valamint speciális fejlesztő iskolában is, ahol tanulásban akadályozott és autizmusban érintett gyermekekkel foglalkoztam egyéni és kiscsoportos formában. Munkámhoz szervesen hozzátartoznak a tudományos kutatásaim, írásaim és publikációim is.</p>
+
+            <h2>Hivatásom és hitvallásom</h2>
+            <p>Nagyon szeretem az életet, a természetet és a művészeteket. Az a célom, hogy átadhassam azon értékek szeretetét a gyermekeknek és felnőtteknek, melyekben én is hiszek: a természet csodájában, az együtt zenélés örömében és a közös alkotás erejében. Hiszem, hogy a zenének gyógyító ereje van, és általa teljesebb, egészségesebb életet élhetünk.</p>
+            <p>Békés megyében szervezek saját Kokas-foglalkozásokat, alkotónapokat, táborokat és zeneterápiás műhelyeket. A foglalkozások során a résztvevők elmélyültebben foglalkozhatnak a művészetterápiákkal, megismerhetik önmagukat és társaikat, miközben fejlődik a szociális érzékük, mozgáskoordinációjuk és ritmusérzékük.</p>
+            <p>A Kokas-pedagógia és a zeneterápia számomra egy napsütötte rét, ahová mindig megérkezhetek a haloványabb hétköznapok során is, és ahol a hozzám érkezőkkel együtt csodaszép közös élményekben gyarapodhatunk, feltöltődhetünk. Örömmel tölt el, hogy azt a hivatást gyakorolhatom, amiről gyermekkorom óta álmodom – ezt az örömöt és feltöltődést szeretném átadni a hozzám érkezőknek is.</p>
         </div>
     </section>
 
@@ -120,52 +127,129 @@
         <div class="container">
             <h2>Foglalkozások & Élmények</h2>
             
+            <!-- EGYÉNI ÓRÁK -->
             <div class="activity-block">
-                <h3>Zeneterápia</h3>
-                <p><em>[Leírás feltöltése később...]</em></p>
+                <h3>Egyéni órák – Egyéni utak</h3>
+                <p>A zene- és művészetterápia segít oldani a stresszt, kifejezni az érzelmeket, erősíti az önbizalmat, a kreativitást és támogató társ az önismeret útján.</p>
+                
+                <h4>Kinek és miben segít az egyéni foglalkozás?</h4>
+                <p>Hiszem, hogy mindannyiunk számára létfontosságú a teljes figyelem és az elfogadó jelenlét. Az egyéni órákon egy biztonságos közegben, a zene és a vizuális alkotás eszközeivel segítjük a belső egyensúly megteremtését.</p>
+                <p><strong>Szeretettel ajánlom gyermekeknek és felnőtteknek egyaránt, ha segítségre van szükség az alábbi területeken:</strong></p>
+                <ul>
+                    <li><strong>Feszültségoldás és érzelmi egyensúly:</strong> stresszkezelés, frusztrációtűrés, indulatkezelés és hatékony megküzdési stratégiák kialakítása.</li>
+                    <li><strong>Személyiségfejlődés:</strong> az önbecsülés, a pozitív önkép, a testtudat és a kommunikáció erősítése.</li>
+                    <li><strong>Készségfejlesztés:</strong> a kreativitás, valamint a motoros és kognitív képességek kibontakoztatása.</li>
+                    <li><strong>Kísérő folyamatként:</strong> kiváló kiegészítésként szolgálhat a hagyományos, verbális terápiák mellett.</li>
+                </ul>
+
+                <h4>Hogyan indulunk el? 🌞</h4>
+                <p>Az első konzultáció során részletesen átbeszéljük az egyéni igényeket és célokat, majd ez alapján állítom össze a személyre szabott foglalkozási tervet. Innen indulunk el a közös belső utazásra, amely teret ad az önkifejezésnek, a fejlődésnek és a lelki béke megteremtésének.</p>
             </div>
 
+            <!-- ZENEOVI -->
             <div class="activity-block">
-                <h3>Önismereti csoport</h3>
-                <p><em>[Leírás feltöltése később...]</em></p>
+                <h3>Zeneovi</h3>
+                <p><em>[Részletek hamarosan...]</em></p>
             </div>
 
+            <!-- KOKAS-FOGLALKOZÁS -->
             <div class="activity-block">
-                <h3>Egyéni foglalkozások</h3>
-                <p><em>[Leírás feltöltése később...]</em></p>
+                <h3>Kokas-foglalkozás</h3>
+                <p>Kokas Klára zenéből indított művészetpedagógiájának központjában az aktív zenebefogadás, improvizatív mozgás, kreatív éneklés és szabad vizuális kifejezés áll. Eltérő képességterületeket aknáz ki és kapcsol össze, és ennek révén lehetővé teszi a zene élményszerű, teljes figyelemmel történő befogadását. Összetettsége révén járul hozzá a komplex személyiségfejlődéshez, szociális készségek javításához, motorikus és finommotorikus, téri-vizuális és kognitív képességek – mint memória, figyelem, képzelet – fejlődéséhez.</p>
+                
+                <h4>De hogyan is néz ki egy Kokas-foglalkozás?</h4>
+                <p>A foglalkozásokat az énekszó foglalja csodálatosan szabad keretbe. Ezekkel a dalokkal játszunk szabadon, a pillanat ihlette átváltozásokkal és kreativitást fejlesztő gyakorlatokkal.</p>
+                <p>Utána klasszikus zenei részletekre szabad mozgás következik, majd az átélt élményeket vizuális alkotás formájában örökítjük meg. Ehhez sokféle technikát használunk: temperát, akril- vagy vízfestéket, olaj- és porpasztellt, ceruzát, tust, vagy akár agyagot.</p>
+                <p>Zárásképpen a búcsúéneklés során köszönünk el egymástól a kedvenc dalainkkal, vagy a foglalkozás tematikájához illő nép- és gyermekdalokkal.</p>
             </div>
 
+            <!-- ZENEI FÓKUSZÚ CSOPORTOK -->
             <div class="activity-block">
-                <h3>Kokas-foglalkozások</h3>
-                <p><em>[Leírás feltöltése később...]</em></p>
+                <h3>Zenei fókuszú komplex művészetterápiás csoportok 🎨🪘</h3>
+                
+                <h4>a) Zenélj, fess, lazulj! – Nyitott csoport</h4>
+                <p>Mindenkinek szüksége van néha egy kis pihenésre és magára fordított minőségi időre. Amikor túl sok az inger, a zenélés, az alkotás és a mozgás segít a feltöltődésben, hogy utána könnyebben menjenek a mindennapi feladatok.</p>
+                <p><strong>Mi történik a foglalkozáson?</strong> A foglalkozáson az aktív örömzenélés, játék és a nyugodtabb, a zene és képzőművészet fúziójára épülő szakaszok váltják egymást. Először játékosan, ritmusokkal, hangszerekkel és különböző önismereti játékokkal oldódunk. Ezután elmélyültebben, alkotás közben figyelünk a belső hangunkra. Ehhez valamilyen vizuális technikát (pl. kollázs, akril, pasztellkréta stb.) és természetesen a zenét használjuk támaszként. Végén mindenkinek lehetősége van megosztásra egy zárókör keretein belül.</p>
+                <p><strong>Fókuszban:</strong> Az öröm, a saját élmény, a stresszoldás és a minőségi énidő.<br>
+                <strong>Kiknek szól?</strong> Tinédzsereknek és felnőtteknek. A foglalkozás semmilyen zenei vagy képzőművészeti előképzettséget nem igényel. 🙂</p>
+                <p><strong>🔓 Miért jó a nyitott csoport?</strong> Bármelyik alkalomhoz szabadon csatlakozhatsz, így a résztvevők köre alkalmanként változhat. Rugalmas (nem kell hosszú távra elköteleződnöd), kipróbálhatod, milyen a művészetterápiás közeg, és minden alkalom kicsit más, új emberekkel és energiákkal.</p>
+
+                <hr style="border: 0; border-top: 1px dashed #cbd5e0; margin: 20px 0;">
+
+                <h4>b) Ritmusok és formák – 4-8 alkalmas komplex művészetterápiás zárt csoport felnőtteknek</h4>
+                <p><em>Fókuszban a saját, belső ritmusunk és az egyensúly megteremtése 🎶</em></p>
+                <p>A közös munka során ritmusokat, hangokat, képzőművészeti eszközöket és kreatív játékokat hívunk segítségül. Az alkotás és a megosztás teret ad arra, hogy közelebb kerülj önmagadhoz, ráless a működési mintáidra, felfedezd a belső erőforrásokat és új nézőpontokat találj a mindennapokhoz. A zárt forma megtartó közeget ad: ahogy alkalomról alkalomra épül a bizalom, úgy tudunk egyre mélyebb önismereti folyamatokba megérkezni.</p>
+                <p><strong>Mit adhat a csoport?</strong></p>
+                <ul>
+                    <li>Mélyebb önismeretet és tisztább belső képet.</li>
+                    <li>Elfogadó, biztonságos és megtartó közösséget.</li>
+                    <li>Új rálátást a saját működésedre.</li>
+                    <li>Támogatást a személyes változási folyamataidban.</li>
+                </ul>
+                <p>Művészeti vagy zenei előképzettségre nincs szükség – itt a megtapasztalás és maga a folyamat a fontos, nem a végeredmény. 🌿</p>
+                <p><strong>🔒 Zárt csoport:</strong> Egy meghatározott ideig (pl. 4–8 alkalom) együtt dolgozó, fix közösség, ahová a kezdés után már nem érkeznek új tagok. Biztonságos, megtartó légkört teremt, lehetőséget ad mélyebb folyamatokra és a közösség összecsiszolódásával erősebb a bizalom és a kapcsolódás.</p>
             </div>
 
+            <!-- ZENGŐ ALKOTÓTÁBOR -->
             <div class="activity-block">
-                <h3>Zengő Alkotótábor</h3>
-                <p><em>[Leírás feltöltése később...]</em></p>
+                <h3>Zengő Alkotótábor 🌱🎨🎶</h3>
+                <p>A Zengő Alkotótábor a szívem csücske: megálmodója, szervezője és vezetője vagyok annak a folyamatnak, aminek keretében 2026-ban már az 5. tábort tarthattam meg. Ez egy olyan élményalapú nyári tábor a természet lágy ölén, ahol a gyermekek a művészeteken – zenén, mozgáson és képzőművészeten – keresztül tapasztalhatják meg az alkotás és a közösség felszabadító örömét. A programokat rendszeresen szuper vendégművészek teszik még színesebbé!</p>
+                
+                <h4>Miben más, mint egy hagyományos tábor?</h4>
+                <p>A legtöbb táborral ellentétben nálunk nincs teljesítménykényszer és nincsenek elvárások a végeredményt tekintve. A zene és a képzőművészet nem feladatként, hanem örömforrásként van jelen. A táborhoz semmilyen zenei vagy művészeti előképzettség nem szükséges.</p>
+                <p>A hangsúly a folyamaton, a szabad önkifejezésen, a feltöltődésen és az elfogadó közösségi élményen van. A célom, hogy a gyerekek biztonságos, megtartó közegben töltsék az időt, ahol az alkotás mellett az önismeretük és az önbizalmuk is természetes módon épül. Emellett fontos részét képezi a tábori működésnek, hogy a gyermekek beszállnak a napi teendők elvégzésébe: segítenek összepakolni a kreatív eszközöket, játékokat, elmosogatják a tányérjukat stb.</p>
+
+                <h4>Milyen foglalkozások és programok várhatók?</h4>
+                <p>Minden nap egy kerek, kiegyensúlyozott ívet jár be, ahol az aktív alkotás és a feltöltő pihenés váltják egymást:</p>
+                <ul>
+                    <li><strong>Kokas-foglalkozások:</strong> Népdalok, szabad mozgás, komolyzene és a belső képek vizuális megörökítése.</li>
+                    <li><strong>Aktív zeneterápiás műhelyek:</strong> Közös zenélés, éneklés, ritmusok és élményközpontú hangszerjáték.</li>
+                    <li><strong>Kézműveskedés és képzőművészeti alkotás:</strong> Sokféle technika és szabad alkotás a délutánok során.</li>
+                    <li><strong>Csendes pihenő:</strong> Mesékkel és nyugtató hangfürdővel segítjük az elmélyülést és a feltöltődést.</li>
+                    <li><strong>Szabadtéri játékok:</strong> Felszabadult mozgás, közösségépítés és játék a szabadban.</li>
+                </ul>
             </div>
+
+            <!-- EGYEDI RENDEZVÉNYEK -->
+            <div class="activity-block">
+                <h3>Mindenkinek jár egy kis alkotás!</h3>
+                <p><strong>Egyedi rendezvények, workshopok és közös élmények 🌱</strong></p>
+                <p>Az igényeknek és a lehetőségeknek csak a képzeletünk szabhat határt: gyermekzsúr, osztálytalálkozó, baráti összejövetel, csapatépítő, pedagógiai kari feltöltődés vagy családi találkozó is megszervezhető a közös alkotás és zenélés jegyében.</p>
+                <p>Ez egy mozgó, gördülékeny projekt: örömmel megyek házhoz, irodába, cégekhez, iskolákba vagy bármilyen választott helyszínre. A programok időtartama rugalmas, egy nap leforgása alatt minimum 90 percre és maximum 8 órára vehető igénybe a szolgáltatás.</p>
+                <p><strong>Mindig személyre szabott tematika születik a ti elképzeléseitek alapján:</strong></p>
+                <ul>
+                    <li>Ha örömzenélni, alkotni, beszélgetni és játszani szeretnétek, egy vidámabb, felszabadultabb foglalkozást rakok nektek össze. 🌞</li>
+                    <li>Ha egy kicsit jobban szeretnétek elmélyülni, akkor egy mélyebb, művészetterápiás órát vagy napot tartunk.</li>
+                    <li>Ha csak a képzőművészet vagy csak a zene érdekel benneteket, abba az irányba indulunk el – ha pedig nyitottabbak vagytok, a kettő fúziójából építkezünk.</li>
+                </ul>
+                <p>Nektek csak a célokat kell meghatároznotok, a többit közösen formáljuk meg!</p>
+                <p><strong>Ajándékozz élményt! 🎁</strong> Ha születésnapra vagy bármilyen ünnepi alkalomra szeretnéd adni ezt az élményt valakinek ajándékba, igény szerint ajándékkártyát is tudok kiállítani.</p>
+            </div>
+
         </div>
     </section>
 
-    <!-- 3. AKTUÁLIS -->
+    <!-- 3. AKTUÁLIS (EGYELŐRE KIKOMMENTELVE, HOGY NE JELENJEN MEG)
     <section id="aktualis">
         <div class="container">
             <h2>Aktuális</h2>
-            <p><em>[Ide jönnek a közeledő események, workshopok, induló csoportok és hírek...]</em></p>
+            <p><em>Hamarosan frissülő események és hírek...</em></p>
         </div>
     </section>
+    -->
 
     <!-- 4. KAPCSOLAT -->
     <section id="kapcsolat" style="background: #ffffff;">
         <div class="container">
             <h2>Kapcsolat</h2>
-            <p><strong>E-mail:</strong> <em>[email@cim.hu]</em></p>
-            <p><strong>Telefon:</strong> <em>[+36 30 000 0000]</em></p>
+            <p><strong>Koór Gréta</strong></p>
+            <p><strong>E-mail:</strong> <a href="mailto:dallamter@gmail.com" style="color: #2b4c59;">dallamter@gmail.com</a></p>
             
-            <h3>Social Media</h3>
+            <h3>Kövess be és vedd fel velem a kapcsolatot a Facebookon is:</h3>
             <ul class="social-links">
-                <li><a href="#" target="_blank">Facebook</a></li>
-                <li><a href="#" target="_blank">Instagram</a></li>
+                <li><a href="https://facebook.com/Greti.Kokas" target="_blank">Gréta Kokas-oldala</a></li>
+                <li><a href="https://facebook.com/DallamTer" target="_blank">DallamTér</a></li>
+                <li><a href="https://facebook.com/lenduljmuveszetterapia" target="_blank">Lendülj Művészetterápia</a></li>
             </ul>
         </div>
     </section>
